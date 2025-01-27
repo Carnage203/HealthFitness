@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products </title>
+
+    <!-- box icons  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- styles  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/product.css') }}"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <!-- NAV  -->
+      <div class="nav container">
+        <a href="#" class="logo">Our Products</a>
+        <!-- CART ICON  -->
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+
+        <!-- CART  -->
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+
+          <!-- CONTENT  -->
+          <div class="cart-content"></div>
+
+          <!-- TOTAL   -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">₹0</div>
+          </div>
+          <!-- BUY BUTTON  -->
+          
+            <a href="/checkout" button type="button" class="btn-buy">Buy Now</a></button>
+          
+          <!-- CART CLOSE  -->
+          <i class="bx bx-x" id="cart-close"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      
+
+      <!-- SHOP SECTION  -->
+      <section class="shop container">
+      
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+          <!-- BOX 1 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/p1.webp') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">MuscleBlaze high protein Mass Gainer - 2kg</h2>
+            <span class="product-price">₹3400</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 2 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/p2.webp') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">MuscleBlaze Creatine Monohydrate - 250gm</h2>
+            <span class="product-price">₹999</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 3 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/p3.avif') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">ATOM Asitis BCAA -250gm </h2>
+            <span class="product-price">₹699</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 4 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/250_58d85c73-0357-4e91-ada4-177ea6027f13.avif') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">ATOM Asitis Creatine Monohydrate - 100gm</h2>
+            <span class="product-price">299</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 5 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/pck_3305103_c_m.jpg') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">MB High protein Muesli+Butter</h2>
+            <span class="product-price">₹1700</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 6 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/prd_2989517-MuscleBlaze-High-Protein-Peanut-Butter-1-kg-Dark-Chocolate-Creamy_c_m.webp') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">Mb Fit Peanut Butter - 500gm</h2>
+            <span class="product-price">₹499</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 7 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/Product_Image_-_Kiwi_Fusion.avif') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">ATOM Asitis Creatine Monohydrate - 250gm</h2>
+            <span class="product-price">₹799</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 8 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/SilymarinMilkThistle60capsules1.avif') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">ATOM Asitis Multivitamin - 30x3</h2>
+            <span class="product-price">₹649</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 9 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/prd_3408243-Koshaveda-Ashwagandha-AF43-600mg-by-MuscleBlaze-60-capsules_c_m.webp') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">ATOM Ashwagandha 600mg</h2>
+            <span class="product-price">₹795</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 10 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/prd_3577745-MuscleBlaze-Biozyme-Performance-Whey-4.webp') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">MuscleBlaze Biozyme Performance Whey - 2kg</h2>
+            <span class="product-price">₹4400</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 11 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/prd_3465795-MuscleBlaze-Pre-Workout-CreaXtreme-0.webp') }}"
+              alt="logo"
+              id="product-img"
+            />
+            <h2 class="product-title">MuscleBlaze Pre Workout CreaXtreme - 100gm</h2>
+            <span class="product-price">₹999</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 12 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/CitrullineMalateBluerazz250g.FrontImage.avif') }}"
+              alt="logo"
+              id="product-img"
+            />
+            <h2 class="product-title">ATOM L-Citrulline MAlate 2:1 - 100gm</h2>
+            <span class="product-price">₹1050</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 13 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/prd_3408181-MuscleBlaze-Pre-Workout-Saket-0.webp') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title"> MuscleBlaze Pre Workout Saket-100gm</h2>
+            <span class="product-price">₹999</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 6 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/ATOMDOUBLERICHCHOCOLATEFRONTIMAGE.avif') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">ATOM Asitis Whey protein - 1kg</h2>
+            <span class="product-price">₹1800</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 7 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/images.jpg') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">Myfitness Chololate PeanutButter - 500gm</h2>
+            <span class="product-price">₹599</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!-- BOX 8 -->
+          <div class="product-box">
+            <img
+              src="{{ url_for('static', filename='image/images (1).jpg') }}"
+              alt="logo"
+              class="product-img"
+            />
+            <h2 class="product-title">DEPO TESTOSTERON - 200mg/ml</h2>
+            <span class="product-price">₹11000</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- link js  -->
+    <script src="{{ url_for('static', filename='js/product.js')}}"></script>
+  </body>
+</html>

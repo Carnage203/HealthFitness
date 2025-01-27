@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <ul>
+                    <li>
+                        <img src="{{ url_for('static', filename='image/skull.svg') }}" alt="logo" id="skull" />
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('welcome') }}" id="logo">Home Fitness</a>
+                    </li>
+                </ul>
+            </div>
+            <div calss="right">
+                <ul>
+                    <li>
+                        <a href="{{ url_for('welcome') }}" id="logo">Home
+                        </a>
+                    </li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('product') }}">Products</a></li>
+                    <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="line"></div>
+        <section class="first">
+            <p>Welcome to home fitness, a perfect tracker for home workout.</p>
+        </section>
+        <div class="grid">
+            <div class="card"
+                data-text="Home Fitness provides convenience, accessibility, and personalized workout plans. You can work out anytime, save money on gym memberships, and customize routines to fit your specific needs and goals. It also promotes a healthy lifestyle and consistency.">
+                <div class="card-content">Why should you use Home Fitness?</div>
+            </div>
+            <div class="card"
+                data-text="Home workouts are essential for maintaining physical and mental health. They offer flexibility, reduce the need for commuting, and can be tailored to any fitness level. Additionally, home workouts help in managing stress and improving overall well-being.">
+                <div class="card-content">Why do we need a home workout?</div>
+            </div>
+            <div class="card"
+                data-text="Home Fitness is a comprehensive fitness solution designed to help you achieve your health goals from the comfort of your home. It includes workout plans, progress tracking, and motivation to keep you on track, all without the need for a gym.">
+                <div class="card-content">What is Home Fitness?</div>
+            </div>
+        </div>
+        <div class="hero">
+            <span id="last"> Ready for your Fitness journey.</span>
+            <div class="hbuttons" id="pad">
+                <a target="_blank" href="{{ url_for('workout') }}" class="btn btn-red" id="getStartButton">Get Started
+                    </a>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close-button">&times;</span>
+                <p id="modalText"></p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="left">
+            <ul>
+              <li><img id="skull" src="skull.svg" alt="logo" /></li>
+              <li><a href="home.html" id="logo">Home Fitness</a></li>
+            </ul>
+          </div>
+          <div calss="right">
+            <ul>
+              <li><a href="home.html" id="logo">Home </a></li>
+              <li><a target="_blank" href="/">About</a></li>
+              <li><a target="_blank" href="/">Products</a></li>
+              <li><a target="_blank" href="/">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <h1>Home Workout Assistant</h1>
+        <p>
+          Get real-time feedback on your workout form using your device camera.
+        </p>
+
+        <div id="camera-container">
+          <video id="camera-stream" autoplay></video>
+        </div>
+
+        <button onclick="startCamera()">Start Workout</button>
+        <button onclick="stopCamera()">Stop Workout</button>
+      </div>
+    </main>
+
+    <script>
+      let cameraStream;
+
+      function startCamera() {
+        const video = document.getElementById("camera-stream");
+
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices
+            .getUserMedia({ video: true })
+            .then((stream) => {
+              cameraStream = stream;
+              video.srcObject = stream;
+              video.play();
+            })
+            .catch((err) => {
+              console.error("Error accessing the camera: ", err);
+            });
+        } else {
+          alert("Sorry, your browser doesn't support the camera feature.");
+        }
+      }
+
+      function stopCamera() {
+        const video = document.getElementById("camera-stream");
+        if (cameraStream) {
+          cameraStream.getTracks().forEach((track) => track.stop());
+          video.srcObject = null;
+        }
+      }
+    </script>
+  </body>
+</html>
