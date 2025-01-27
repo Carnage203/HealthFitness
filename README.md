@@ -8,4 +8,4 @@ Tech stack used:
 3. ML model- Mediapipe and Blazepose model.
 4. Data representation- Powerbi.
 
-![homepage](home page.png)
+!([home page.png](https://github.com/Carnage203/HealthFitness/blob/d9be8db1eae1c4f400bff1dc1f94ed8ee260a46c/home%20page.png))
