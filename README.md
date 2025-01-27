@@ -7,3 +7,5 @@ Tech stack used:
 2. Back end- javascript and flask.
 3. ML model- Mediapipe and Blazepose model.
 4. Data representation- Powerbi.
+
+![homepage](home page.png)
