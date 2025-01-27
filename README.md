@@ -9,3 +9,7 @@ Tech stack used:
 4. Data representation- Powerbi.
 
 ![homepage](https://github.com/Carnage203/HealthFitness/blob/d9be8db1eae1c4f400bff1dc1f94ed8ee260a46c/home%20page.png)
+![pruducts](https://github.com/Carnage203/HealthFitness/blob/32fb45cb9ece8dc9a65b32db6b28a96c83abf983/products.png)
+![checkout](https://github.com/Carnage203/HealthFitness/blob/32fb45cb9ece8dc9a65b32db6b28a96c83abf983/checkout.png)
+![dashboard2](https://github.com/Carnage203/HealthFitness/blob/32fb45cb9ece8dc9a65b32db6b28a96c83abf983/dashbooard1.png)
+![dashboard2](https://github.com/Carnage203/HealthFitness/blob/32fb45cb9ece8dc9a65b32db6b28a96c83abf983/dashbooard2.png)
