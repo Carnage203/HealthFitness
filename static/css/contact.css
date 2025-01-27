@@ -1,0 +1,112 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000e0;
+}
+
+nav {
+  height: 63px;
+  background-color: rgb(255, 254, 254);
+}
+
+/* Header */
+.left {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-shadow: 7px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.line {
+  background-color: rgb(61, 60, 60);
+  width: 100vw;
+  /* overflow-x: hidden; */
+  height: 7px;
+  position: relative;
+  z-index: 20;
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+/* Contact Us Section */
+.contact-us {
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-shadow: 7px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+  border: 2px solid black;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #000000;
+}
+
+.member-name {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+  color: #000000;
+}
+
+.member-phone,
+.member-email,
+.memberwork {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.linkedin-link {
+  text-decoration: none;
+  color: #0077b5;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.linkedin-link:hover {
+  color: #005582;
+}

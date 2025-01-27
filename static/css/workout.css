@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#video {
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    background-color: #000;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ba0f0f;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#timer {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #007bff;
+    font-weight: bold;
+}
